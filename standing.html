@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DWIT FUTSAL</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<link href='fonts/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<script src="js/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+	<script src="semantic/dist/semantic.min.js"></script>
+	<script>
+		$(function() {
+			var pull = $('#pull');
+				menu = $('nav ul');
+				menuHeight = menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>
+<body>
+	
+	<div id="wrapper">
+		<nav class="clearfix">
+				<img src="img/sws.png" alt="Deerwalk Image" style="height:40px; width:100px;float:left;"/>
+				<ul class="clearfix">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="standing.html"  class="active">Standing</a></li>
+					<li><a href="scorers.html">Scorers</a></li>
+					<li><a href="fixtures.html">Fixtures </a></li>
+					<li><a href="teams.html">Teams</a></li>
+				</ul>
+			<a href="#" id="pull">Menu</a>
+		</nav>
+		
+		<br>
+		<h1 style="text-align:center">BOYS LEAGUE STANDING</h1>
+
+
+		<table class="ui sortable celled table" style="margin:0px auto;width:90%;">
+	<thead>
+    <tr>
+      <th>Name</th>
+      <th>GP</th>
+      <th>GF</th>
+      <th>GA</th>
+      <th>GD</th>
+      <th>Pts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: rgba(0, 128, 0, 0.59);">
+      <td><b>Team Pratik</b></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr style="background-color: rgba(0, 128, 0, 0.59);">
+      <td><b>Team Shankar</b></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr style="background-color: rgba(0, 128, 0, 0.59);">
+      <td><b>Team Sanjeev</b></td>
+	  <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>    
+    </tr>
+    <tr style="background-color: rgba(0, 128, 0, 0.59);">
+      <td><b>Team Muskan</b></td>
+	<td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>   
+    </tr>
+    <tr style="background-color: rgba(255, 0, 0, 0.58);">
+      <td><b>Team Prabin</b></td>
+	  <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr style="background-color: rgba(255, 0, 0, 0.58);">
+      <td><b>Team Anil</b></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr style="background-color: rgba(255, 0, 0, 0.58);">
+      <td><b>Team Suman</b></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+
+</table>
+<br>
+		<div class="ui card" style="width:50%;margin:0px auto;">
+  <div class="content">
+    <div class="header">Knockout Round</div>
+    <div class="description">
+      <p></p>
+    </div>
+  </div>
+  <div class="extra content" style="border-bottom:1px solid black; "> 
+    <span class="left floated like" style="background-color: rgba(0, 128, 0, 0.59);text-align:center;color:white;">
+      Qualify
+    </span>
+    <span class="right floated star" style="background-color: rgba(255, 0, 0, 0.58);text-align:center;color:white;">
+      Not Qualify
+    </span>
+  </div>
+      <span> &nbsp;&nbsp;GP = Games Played </span>
+      <span> &nbsp;&nbsp;GD = Goals Difference </span>
+      <span> &nbsp;&nbsp;GA = Goals Against </span>
+      <span> &nbsp;&nbsp;GD = Goals For </span>
+      <span> &nbsp;&nbsp;Pts = Points </span>
+</div>
+<br><br><br><br>
+		<div id="footer">
+				<p style="margin-top:20px;color:white;">&copy; 2015, DWIT Sports Club. All rights reserved. <span style="float:right;">For More Info: <a href="http://goo.gl/nZPmfC"> DWIT Sports Club</a></span></p>
+		</div>
+</body>
+</html>

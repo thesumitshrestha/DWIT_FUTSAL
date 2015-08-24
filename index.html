@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DWIT FUTSAL</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<link href='fonts/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<script src="js/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+	<script src="semantic/dist/semantic.min.js"></script>
+	<script>
+		$(function() {
+			var pull = $('#pull');
+				menu = $('nav ul');
+				menuHeight = menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>
+<body>
+	
+	<div id="wrapper">
+		<nav class="clearfix">
+				<img src="img/sws.png" alt="Deerwalk Image" style="height:40px; width:100px;float:left;"/>
+				<ul class="clearfix">
+					<li><a href="index.html"  class="active">Home</a></li>
+					<li><a href="standing.html">Standing</a></li>
+					<li><a href="scorers.html">Scorers</a></li>
+					<li><a href="fixtures.html">Fixtures </a></li>
+					<li><a href="teams.html">Teams</a></li>
+				</ul>
+			<a href="#" id="pull">Menu</a>
+		</nav>
+		<div id="content">
+		<br>
+		<div class="ui piled segment">
+			<h2 class="ui header">
+				Introduction
+			</h2>	
+					<p style="font-size:15px; color:green"><b>DWIT Sports Club is the club that deals with all the sports activities that takes place in DWIT.</b></p> 
+						<p>We are responsible for all the sports activities that takes place in DWIT from small things like providing ,
+						 managing, maintaining sports equipment within DWIT to big things like organizing various sports tournaments, 
+						 sports events like Futsals, indoor cricket etc. </p><p>DWIT has successfully organized various sports tournaments 
+						 in DWIT like football, basketball, badminton, table-tennis, chess, FIFA etc.
+					</p>
+				<h2 class="ui header">	Members </h2>
+					<ul>
+						<b><li style="color:blue">Sumit Shrestha (President)</li>
+						<li style="color:green">Prajjwal Sthapit (Vice-President)</li>
+						<li>Bidur Bastola</li>
+						<li>Bimal Thapa</li>
+						<li>Gaurab Thapa </li>
+						<li>Muskan Lamsal</li>
+						<li>Sushant Chitrakar</li></b>
+					</ul>
+				</div>
+		<div id="footer">
+				<p style="margin-top:20px;color:white;">&copy; 2015, DWIT Sports Club. All rights reserved. <span style="float:right;">For More Info: <a href="http://goo.gl/nZPmfC"> DWIT Sports Club</a></span></p>
+		</div>
+</body>
+</html>

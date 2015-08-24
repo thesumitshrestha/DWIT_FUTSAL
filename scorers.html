@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DWIT FUTSAL</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<link href='fonts/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<script src="js/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+	<script src="semantic/dist/semantic.min.js"></script>
+	<script>
+		$(function() {
+			var pull = $('#pull');
+				menu = $('nav ul');
+				menuHeight = menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+	<style>
+	table .thead .tr td{
+		text-align:center;
+	}
+	#wrapper{
+	background-image: url("img/ronaldo.jpg");
+	}
+	</style>
+</head>
+<body>
+	
+	<div id="wrapper">
+		<nav class="clearfix">
+				<img src="img/sws.png" alt="Deerwalk Image" style="height:40px; width:100px;float:left;"/>
+				<ul class="clearfix">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="standing.html" >Standing</a></li>
+					<li><a href="scorers.html" class="active">Scorers</a></li>
+					<li><a href="fixtures.html">Fixtures </a></li>
+					<li><a href="teams.html">Teams</a></li>
+				</ul>
+			<a href="#" id="pull">Menu</a>
+		</nav>
+		
+		<br>
+		<h1 style="text-align:center"> TOP 10 SCORERS </h1>
+
+
+	<table class="ui sortable celled table" style="margin:0px auto;width:60%;">
+	<thead>
+    <tr>
+      <th> Rank </th>
+      <th>Name (Boys)</th>
+      <th>Name (Girls)</th>
+      <th>Goals Scored</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    	<td> 1 </td>
+    	<td> Sumit </td>
+    	<td> Sara </td>
+    	<td> 10 </td>
+    </tr>
+    <tr>
+    	<td> 1 </td>
+    	<td> Sumit </td>
+    	<td> Sara </td>
+    	<td> 10 </td>
+    </tr>
+    <tr>
+    	<td> 1 </td>
+    	<td> Sumit </td>
+    	<td> Sara </td>
+    	<td> 10 </td>
+    </tr>
+    <tr>
+    	<td> 1 </td>
+    	<td> Sumit </td>
+    	<td> Sara </td>
+    	<td> 10 </td>
+    </tr>
+    <tr>
+    	<td> 1 </td>
+    	<td> Sumit </td>
+    	<td> Sara </td>
+    	<td> 10 </td>
+    </tr>
+    <tr>
+    	<td> 1 </td>
+    	<td> Sumit </td>
+    	<td> Sara </td>
+    	<td> 10 </td>
+    </tr>
+    <tr>
+    	<td> 1 </td>
+    	<td> Sumit </td>
+    	<td> Sara </td>
+    	<td> 10 </td>
+    </tr>
+    <tr>
+    	<td> 1 </td>
+    	<td> Sumit </td>
+    	<td> Sara </td>
+    	<td> 10 </td>
+    </tr>
+    <tr>
+    	<td> 1 </td>
+    	<td> Sumit </td>
+    	<td> Sara </td>
+    	<td> 10 </td>
+    </tr>
+    <tr>
+    	<td> 1 </td>
+    	<td> Sumit </td>
+    	<td> Sara </td>
+    	<td> 10 </td>
+    </tr>
+     
+  </tbody>
+</table>
+<br>
+<br><br><br><br>
+		<div id="footer">
+				<p style="margin-top:20px;color:white;">&copy; 2015, DWIT Sports Club. All rights reserved. <span style="float:right;">For More Info: <a href="http://goo.gl/nZPmfC"> DWIT Sports Club</a></span></p>
+		</div>
+</body>
+</html>
